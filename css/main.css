@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "mainFont";
+  src: url("../assests/fonts/JameelNooriNastaleeqRegular.ttf");
+}
+
+:root {
+  --navbar-font-size: 2vw;
+  --body-padding: 10vw;
+  --logo-size: 100px;
+  --medium-gap: 2vw;
+  --main-color: red;
+  --font-color: "#000";
+  --background-color: #fff;
+  --cards-gap: 1vw;
+  --sections-gap: 2vh;
+  --medium-padding: 2vh;
+  --small-gap: 1vh;
+  --small-padding: 0.5rem;
+  --large-section-seperator: 10vh;
+  --btn-font-size: 2rem;
+  --btn-padding: .3rem;
+}
+
+.dark {
+  --font-color: #fff;
+  --background-color: #000;
+}
+.seperator{
+    height: var(--large-section-seperator);
+}
+.adsButton{
+    padding: var(--btn-padding);
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+    color: #000;
+    font-size: var(--btn-font-size);
+    margin-top: 20px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "mainFont", sans-serif;
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100vw;
+}
+.mainNavbar {
+  margin-bottom: var(--sections-gap);
+}
+.topNavbar {
+  background-color: red;
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  color: white;
+  align-items: center;
+  gap: var(--medium-gap);
+}
+.bottomNavbar ul {
+  display: flex;
+  list-style: none;
+  gap: var(--medium-gap);
+  font-size: var(--navbar-font-size);
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.upperCards {
+  width: 100%;
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--sections-gap);
+}
+
+.upperSection {
+  width: 100%;
+  padding: var(--medium-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--medium-gap);
+}
+.upperSection .rightPart {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.upperSection .leftPart {
+  width: 50%;
+}
+.bottomSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upperSection .rightPart .card {
+  background-color: var(--background-color);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--small-padding);
+}
+
+.upperSection .rightPart .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leftPart .card {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--small-padding);
+  align-items: flex-end;
+}
+
+.leftPart .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hiddenSection {
+  width: 100%;
+  gap: var(--cards-gap);
+  display: none;
+}
+
+.hiddenSection .card {
+  width: 33%;
+  background-color: var(--background-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--small-padding);
+  align-items: flex-end;
+}
+
+.hiddenSection .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottomSection .card {
+  width: 25%;
+  background-color: var(--background-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--small-padding);
+  align-items: flex-end;
+}
+
+.bottomSection .card img{
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featureSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+    align-items: flex-end;
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
+}
+
+.featureSection h1{
+    margin-bottom: var(--small-gap);
+}
+
+.miniCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.miniCard {
+  background-color: var(--background-color);
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--small-padding);
+}
+.miniCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adsCard{
+    width: 100%;
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color);
+}
+.adsCard .content{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: var(--medium-padding);
+    color: white;
+}
+
+.adsCard .content .leftContent{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.adsCard .content .leftContent img{
+   position: absolute;
+   top: 50%;
+}
+@media screen and (max-width: 1021px) {
+  :root {
+    --body-padding: 0.8vw;
+    --navbar-font-size: 3vw;
+  }
+
+  .upperSection {
+    padding: 0px;
+  }
+  .upperSection .rightPart {
+    width: 25%;
+  }
+  .upperSection .rightPart .card {
+    width: 100%;
+  }
+  .upperSection .rightPart .third {
+    display: none;
+  }
+  .upperSection .rightPart .fourth {
+    display: none;
+  }
+  .upperSection .leftPart {
+    width: 75%;
+  }
+  .hiddenSection {
+    display: flex;
+  }
+  .miniCard{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .upperSection {
+    flex-direction: column-reverse;
+  }
+  .upperSection .leftPart {
+    width: 100%;
+  }
+  .upperSection .rightPart {
+    width: 100%;
+  }
+  .upperSection .rightPart .card {
+    width: 50%;
+  }
+  .hiddenSection .third {
+    display: none;
+  }
+  .hiddenSection .card {
+    width: 50%;
+  }
+  .bottomSection{
+    flex-wrap: wrap;
+  }
+  .bottomSection .card{
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .bottomSection .card img{
+    display: block;
+    width: 30%;
+  }
+  .miniCardContainer{
+    flex-direction: row;
+  }
+  .miniCard{
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: var(--medium-gap);
+  }
+  .miniCard img{
+    width: 30%;
+  }
+  
+  .adsCard .content .leftContent{
+    display: none;
+  }
+}
