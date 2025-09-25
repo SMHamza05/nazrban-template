@@ -18,24 +18,25 @@
   --small-padding: 0.5rem;
   --large-section-seperator: 10vh;
   --btn-font-size: 2rem;
-  --btn-padding: .3rem;
+  --btn-padding: 0.3rem;
+  --medium-font-size: 1.4rem;
 }
 
 .dark {
   --font-color: #fff;
   --background-color: #000;
 }
-.seperator{
-    height: var(--large-section-seperator);
+.seperator {
+  height: var(--large-section-seperator);
 }
-.adsButton{
-    padding: var(--btn-padding);
-    border: none;
-    outline: none;
-    background-color: var(--background-color);
-    color: #000;
-    font-size: var(--btn-font-size);
-    margin-top: 20px;
+.adsButton {
+  padding: var(--btn-padding);
+  border: none;
+  outline: none;
+  background-color: var(--background-color);
+  color: #000;
+  font-size: var(--btn-font-size);
+  margin-top: 20px;
 }
 * {
   padding: 0;
@@ -70,6 +71,13 @@ html {
   flex-direction: row-reverse;
   color: white;
   align-items: center;
+  gap: var(--medium-gap);
+}
+.topNavbar a{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
   gap: var(--medium-gap);
 }
 .bottomNavbar ul {
@@ -187,31 +195,31 @@ html {
   align-items: flex-end;
 }
 
-.bottomSection .card img{
+.bottomSection .card img {
   display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.featureSection{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium-gap);
-    align-items: flex-end;
-    padding-left: var(--body-padding);
-    padding-right: var(--body-padding);
+.featureSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-gap);
+  align-items: flex-end;
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
 }
 
-.featureSection h1{
-    margin-bottom: var(--small-gap);
+.featureSection h1 {
+  margin-bottom: var(--small-gap);
 }
 
-.miniCardContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.miniCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .miniCard {
   background-color: var(--background-color);
@@ -222,45 +230,117 @@ html {
   gap: var(--small-gap);
   padding: var(--small-padding);
 }
-.miniCard img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.miniCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.adsCard{
-    width: 100%;
-    padding-left: var(--body-padding);
-    padding-right: var(--body-padding);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--font-color);
+.adsCard {
+  width: 100%;
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color);
 }
-.adsCard .content{
-    width: 100%;
-    background-color: var(--main-color);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    padding: var(--medium-padding);
-    color: white;
+.adsCard .content {
+  width: 100%;
+  background-color: var(--main-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: var(--medium-padding);
+  color: white;
 }
 
-.adsCard .content .leftContent{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100%;
+.adsCard .content .leftContent {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
 }
-.adsCard .content .leftContent img{
-   position: absolute;
-   top: 50%;
+.adsCard .content .leftContent img {
+  position: absolute;
+  top: 50%;
 }
+
+.socialCards{
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: var(--medium-gap);
+}
+ .socialCards .cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 100%;
+ }
+
+ .socialCards .cards a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: var(--medium-gap);
+  background-color: #fff;
+ }
+
+ .socialCards .cards a img{
+  width: 100px;
+  height: 100px;
+ }
+ footer {
+      background: #111;
+      padding: 20px;
+      border-top: 1px solid #333;
+      color: #fff;
+      padding-left: var(--body-padding);
+      padding-right: var(--body-padding);
+    }
+
+    footer p {
+      margin: 10px 0;
+      font-size: 26px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 5px;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .footer-grid li {
+      list-style: none;
+    }
+
+    .footer-grid a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-grid a:hover {
+      color: #1db954;
+      text-decoration: underline;
+    }
+
 @media screen and (max-width: 1021px) {
   :root {
     --body-padding: 0.8vw;
@@ -288,7 +368,7 @@ html {
   .hiddenSection {
     display: flex;
   }
-  .miniCard{
+  .miniCard {
     width: 50%;
   }
 }
@@ -312,31 +392,31 @@ html {
   .hiddenSection .card {
     width: 50%;
   }
-  .bottomSection{
+  .bottomSection {
     flex-wrap: wrap;
   }
-  .bottomSection .card{
+  .bottomSection .card {
     width: 100%;
     flex-direction: row-reverse;
     align-items: center;
   }
-  .bottomSection .card img{
+  .bottomSection .card img {
     display: block;
     width: 30%;
   }
-  .miniCardContainer{
+  .miniCardContainer {
     flex-direction: row;
   }
-  .miniCard{
+  .miniCard {
     width: 100%;
     flex-direction: row-reverse;
     gap: var(--medium-gap);
   }
-  .miniCard img{
+  .miniCard img {
     width: 30%;
   }
-  
-  .adsCard .content .leftContent{
+
+  .adsCard .content .leftContent {
     display: none;
   }
 }
